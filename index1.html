@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAMEEKSHA - PORTFOLIO</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            color: white;
+        }
+
+        body {
+            background-color: rgb(0, 0, 33);
+            font-family: 'Poppins', sans-serif;
+            color: white;
+
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 90px;
+            color: rgb(18, 18, 62);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 35px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+        }
+        
+
+        nav ul li a:hover {
+            color: rgb(115, 115, 224);
+            font-size: 1.02rem;
+        }
+
+        main hr {
+            border: 0;
+            background-color: rgb(144, 83, 202);
+            height: 3px;
+            margin: 60px 84px;
+            top: 15px;
+        }
+
+        .left {
+            font-size: 1.5rem;
+        }
+
+        .firstSection {
+            display: flex;
+            justify-content: space-around;
+            margin: 70px 0;
+            align-items: center;
+            margin: 100px 0;
+        }
+
+        .firstSection>div {
+            width: 30%
+        }
+
+        .leftSection {
+            font-size: 2.5rem;
+            margin: 65px 0;
+            white-space: nowrap;
+        }
+
+        .leftSection .buttons {
+            padding: 40.5px 1px;
+        }
+
+        .leftSection .btn {
+            padding: 12px;
+            color: white;
+            background: rgb(103 65 139 / 71%);
+            border-radius: 8px;
+            border: 1px solid white;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        .rightSection img {
+            width: 80%;
+        }
+
+        .purple {
+            color: rgb(170, 107, 228);
+        }
+
+        .text-gray {
+            color: gray;
+        }
+
+        #element {
+            color: rgb(170, 107, 228);
+        }
+
+        .secondSection {
+            margin: auto;
+            max-width: 70vw;
+            height: 80vh;
+        }
+
+        .secondSection h1 {
+            font-size: 1.7rem;
+        }
+
+        .secondSection .box {
+            background: white;
+            width: 100vw;
+            height: 2px;
+            margin: 52px -70px;
+            display: flex;
+
+        }
+
+        .secondSection .vertical {
+            height: 93px;
+            width: 1px;
+            background-color: white;
+            margin: 0 112px;
+
+        }
+
+
+        .vertical-title {
+            text-decoration: none;
+            color: rgb(170, 107, 228);
+            font-size: 18px;
+            display: block;
+            padding: 10px 5px;
+            position: relative;
+
+        }
+
+        .vertical-title a:hover {
+            color: rgb(219, 219, 228);
+        }
+
+        .image-top {
+            width: 50px;
+            position: relative;
+            top: -50px;
+            left: -25px;
+        }
+
+        .vertical-desc {
+            position: relative;
+            top: 15px;
+            color: gray;
+            width: 160px;
+            font-size: 10.5px;
+        }
+
+        #phoneDropdown {
+            display: none;
+            position: absolute;
+            background-color: rgb(94, 94, 110);
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            color: white;
+            border-radius: 8px;
+            /* Add rounded corners */
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            /* Add a subtle box shadow */
+        }
+
+        #phoneDropdown li {
+            padding: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            /* Add transition for smooth hover effect */
+        }
+
+        #phoneDropdown li:hover {
+            background-color: rgb(144, 83, 202);
+            /* Change background color on hover */
+        }
+
+        #emailDropdown {
+            display: none;
+            position: absolute;
+            background-color: rgb(94, 94, 110);
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            color: white;
+        }
+
+        #emailDropdown li {
+            padding: 10px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left"> Sameeksha's PORTFOLIO </div>
+            <div class="right">
+                <ul>
+
+                    <li><a href="https://github.com/sameeksham09">Github</a></li>
+                    <li><a href="https://www.linkedin.com/in/sameeksha-m-32b19a211/">LinkedIn</a></li>
+                    <li><a href="#projectsection">Projects</a></ <li>
+                    <li><a href="#" id="emailLink">Mail</a>
+                        <ul id="emailDropdown" style="display:none;">
+                            <li>youremail@example.com</li>
+                        </ul>
+                    </li>
+
+
+                    <li><a href="#" id="phoneLink">Phone No</a>
+                        <ul id="phoneDropdown" style="display:none;">
+                            <li>7019909753</li>
+                        </ul>
+                    </li>
+
+
+
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                Hi, My name is <span class="purple">Sameeksha</span>
+                <div>and I am a</div>
+                <span id="element"></span>
+                <div class="buttons">
+                    <a href="https://drive.google.com/file/d/1volRT-ixFuJPDBxm9HXMWtO1-HpeV9rB/view?usp=sharing"
+                        download>
+                        <button class="btn">Download Resume</button>
+                    </a>
+                </div>
+            </div>
+            <div class="rightSection"><img src="gdev.png" alt=""></div>
+        </section>
+        <hr style="border: 0;
+        background-color: rgb(144, 83, 202);
+        height: 1px;
+        margin: 30px 64px;">
+        <section class="secondSection" id="projectsection">
+            <span class="text-gray">My Progress and Achievements</span>
+            <h1>Previous Endeavors</h1>
+            <div class="box">
+                <div class="vertical">
+                    <img class="image-top" src="brane.jpeg" alt="">
+                    <div class="vertical-title">BRANE Intern</div>
+                    <div class="vertical-desc">I have developed test plans, test cases, test scripts, and test reports.
+                        Additionally, I have conducted testing on software systems using tools like Postman. I have
+                        worked in various teams and gained exposure to the company's work culture and the different
+                        domains it operates </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="ttt.png" alt="">
+                    <a href="https://github.com/sameeksham09/Fake-News-Detection.git" class="vertical-title">Fake News
+                        Detection</a>
+                    <div class="vertical-desc">The Fake News Detection Web Application combines the power of machine
+                        learning, natural language processing (NLP), and
+                        data analysis. By leveraging machine learning algorithms and sophisticated feature extraction
+                        techniques, we provide users with a reliable tool to identify and verify the authenticity of
+                        news articles</div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="ttt.png" alt="">
+                    <a href="https://github.com/sameeksham09/online_Electronic22.git" class="vertical-title">Electronic
+                        Store</a>
+                    <div class="vertical-desc">This project has been made for creating bills of different electronic
+                        products according to the customer demand in a very simplified,
+                        secure way and billing can be done in short duration of time. The software displays the list of
+                        products from which product can be selected quantity can be entered and at last the details of
+                        customer are entered and invoice is generated.</div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="ttt.png" alt="">
+                    <a href="https://github.com/sameeksham09/Keylogger.git" class="vertical-title">Keylogger</a>
+                    <div class="vertical-desc">Keyloggers are programs that capture your key strokes. They can be used
+                        to keep logs of everything you press on the keyboard but on the flip side it can be used for
+                        malicious purposes as well.
+                        The keylogger that I've made is a basic keylogger.It captures your keystrokes and saves them in
+                        a file "keylogger.txt".
+                        It then sends the contents of the file(i.e. the keystrokes) to your email id.</div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="ttt.png" alt="">
+                    <a href="https://github.com/sameeksham09/library-.git" class="vertical-title">Library Database
+                        Management</a>
+                    <div class="vertical-desc">A college library management is a project that manages and stores books
+                        information electronically according to student's
+                        needs. The primary goal of this project is to improve the essence and effectiveness of library
+                        operations</div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="ttt.png" alt="">
+                    <div class="vertical-title" class="vertical-title">HTML Developer</div>
+                    <div class="vertical-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis error
+                        neque laudantium, asperiores nam quas unde dolor minus alias cupiditate reprehenderit architecto
+                        eveniet fuga dolorem ab debitis hic quam voluptas.</div>
+                </div>
+
+
+
+
+            </div>
+        </section>
+    </main>
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <!-- Setup and start animation! -->
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Designer', 'Cybersecurity Analyst', 'CSE Student'],
+            typeSpeed: 50,
+        });
+
+        document.addEventListener('DOMContentLoaded', function () {
+            const projectsLink = document.querySelector('a[href="#projectsection"]');
+
+            projectsLink.addEventListener('click', function (event) {
+                event.preventDefault();
+
+                document.querySelector('#projectsection').scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+
+        document.addEventListener('DOMContentLoaded', function () {
+            const phoneLink = document.getElementById('phoneLink');
+            const phoneDropdown = document.getElementById('phoneDropdown');
+
+            phoneLink.addEventListener('click', function (event) {
+                event.preventDefault();
+                phoneDropdown.style.display = (phoneDropdown.style.display === 'none' || phoneDropdown.style.display === '') ? 'block' : 'none';
+            });
+        });
+
+        document.addEventListener('DOMContentLoaded', function() {
+            const emailLink = document.getElementById('emailLink');
+            const emailDropdown = document.getElementById('emailDropdown');
+        
+            emailLink.addEventListener('click', function(event) {
+                event.preventDefault();
+                emailDropdown.style.display = (emailDropdown.style.display === 'none' || emailDropdown.style.display === '') ? 'block' : 'none';
+            });
+        });
+        
+
+
+
+
+
+    </script>
+</body>
+
+</html>
